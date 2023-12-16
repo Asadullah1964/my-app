@@ -1,0 +1,45 @@
+
+/* Customize the scrollbar */
+ul.dropdown-menu::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ul.dropdown-menu::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  /* Handle */
+  ul.dropdown-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ul.dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+/* ButtonStyles.css */
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four buttons in a row for larger screens */
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .buttons-container {
+      grid-template-columns: repeat(3, 1fr); /* Two buttons in a row for medium-sized screens */
+    }
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 540px) {
+    .buttons-container {
+      grid-template-columns: repeat(3, 1fr); /* Single button in a row for smaller screens */
+      gap: 0px;
+    }
+  }
+  
